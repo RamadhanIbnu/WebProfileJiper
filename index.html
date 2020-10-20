@@ -1,35 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header mulai -->
+    <header>
+      <nav class="navbar">
+        <div>
+          CYPRINUS CARPIO
+        </div>
+        
+      </nav>
+      <h1>Website about KOI</h1>
+    </header>
+    <!-- header selesai -->
     
-    <div class="navbar">
-            CYPRINUS CARPIO 
-    </div>
-    <div class="main">
-        <div id="content">
-            <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rerum quae sint, error dolorem laboriosam delectus ullam ab, amet nesciunt repudiandae, ut asperiores est consectetur! Commodi est velit debitis similique!</p>
-            </article>
-            <article>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis excepturi quas a magni laboriosam, quisquam laudantium repellat, exercitationem omnis et cumque quod nemo alias. Amet illum dolorem voluptatem deleniti iure!</p>
-            </article>
-        </div>
-        
-        <div class="aside">
+    <!-- main mulai -->
+    <main>
+      <div id="content">
+        <!-- artikel mulai -->
+        <article class="artikel-1">
+          <h3>KOHAKU KOI</h3>
+          <div class="container-description">
+            <img src="./assets/kohaku-koi.png" alt="" />
+            <p class="description-koi">
+              Berdasarkan sejarah, awal ditemukan kohaku adalah penemuan koi
+              merah dan putih di sekitar tahun 1804 dan 1829. Awalnya menemukan
+              warna nada-nada Red carps hitam. Ikan dikenal untuk Hookazuki.
+              Dari koi ini, dihasilkan anakan berwarna putih. Kemudian ikan koi
+              putih diresapi dengan api Koi merah disebut Higoi. Koi menangkap
+              koi dengan warna merah perut. Kemudian muncul lagi koi dengan pola
+              yang berbeda, kening berwarna merah (Zukinkaburi), corah-red di
+              kepala (Menkaburi), bibir merah (Kuchibeni), dan merah di bagian
+              belakang (Sarasa). Varietas kohaku terus tumbuh terutama di daerah
+              Niagata, yang sampai sekarang dikenal sebagai pusat untuk budidaya
+              ikan koi. Tipe kohaku yang sekarang terkenal keturunan Hachi Hi,
+              bahwa ikan koi perempuan dengan kepala merah, yang disilangkan
+              dengan Stud Sokura Kana (pola Cherry blossom)sekitar tahun 188.
+              Penilaian pola dari merah dan putih pada kohaku: Karena kohaku
+              adalah tipe koi yang sederhana dalam pola, maka penilaian untuk
+              ikan ini juga menjadi sangat ketat. Akhirnya, Pola Warna Merah dan
+              putih bisa menjadi faktor penting kohaku. Pola yang paling
+              seimbang dianggap memiliki penilaian yang tinggi.
+            </p>
+          </div>
+        </article>
+        <article class="artikel-1">
+            <h3>KOI SANKE TAISHO</h3>
+            <div class="container-description">
+                <img src="./assets/koi-sanke-taishou.png" alt="">
+                <p class="description-koi">
+                    Hampir sama dengan Kohaku, kombinasi warna merah dan putih juga ada pada jenis koi Sanke. Perbedaannya adalah adanya
+                    warna hitam di bagian belakang koi ini. Namanya Sumi.
+                    Sanke atau juga disebut Taisho Sanshoku mulai dibesarkan sekitar tahun 1917. Atas dasar asal-usul, koi ikan sanke
+                    berasal dari hasil salib koi fish Kohaku dan koi Shiro Bekko.
+                    Sementara warna hi pada Koi sanke harus seragam untuk masing-masing koi. Semua warna dari Hi kuning persimmon, merah
+                    murni yang cenderung gelap dapat diterima untuk kualitas koi sanke. Yang paling penting warna adalah seragam seluruh
+                    tubuh.
+                    (Dan dalam naungan asap yang hitam) mereka diliputi oleh asap yang sangat hitam. Seperti warna Hi, tepi baris (kiwa)
+                    harus tajam dan tegas. Shades of black (sumi) tidak baik sering disebut Sashi, yang kadang-kadang terlihat seperti
+                    powerbald, atau abu-abu, tidak hitam padat. Untuk koi masih muda, sebenarnya tidak terlalu buruk, karena sumi terus
+                    berkembang sesuai dengan usianya.
+                </p>
+            </div>
+        </article>
+        <!-- artikel selesai -->
+      </div>
 
-                <div class="profile-picture"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, perferendis, praesentium consectetur eum nam ratione quia amet doloremque asperiores ipsum voluptas, reprehenderit voluptatum voluptatem explicabo atque. Mollitia laboriosam corporis at.</p>
+      <!-- aside -->
+      <aside>
+        <img src="./assets/1562138333575.jpg" alt="gambar jiper">
+        <div class="about">
+          <div class="name">
+            <p>Nama : </p>
+            <p class="text-margin-left">Jiper</p>
+          </div>
+          <div class="birth-date">
+            <p>Tanggal Lahir: </p>
+            <p class="text-margin-left">31 februari 1990</p>
+          </div>
+          <div class="about-me">
+            <p class="header-about-me">About Me</p>
+            <p>saya adalah seorang pria jomblo yang sedang mencari anak perawan</p>
+          </div>
         </div>
-        
-    </div>
-    <footer>
-        Copyright 2020 -yunanda giffa
-    </footer>
-</body>
+      </aside>
+    </main>
+    <!-- main selesai -->
+    <footer>Copyright 2020 -yunanda giffa</footer>
+
+    <!-- fungsi javascript buat sticky navbar -->
+    <script>
+        // eksekusi fungsi ketika mejalankan scroll
+        window.onscroll = () =>{
+            stickyNav();
+        };
+
+        // ambil navbar
+        const navbar = document.querySelector('.navbar')
+
+        const sticky = navbar.offsetTop;
+
+        // fungsi utama
+        const stickyNav = () =>{
+            if(window.pageYOffset > sticky) {
+                navbar.classList.add('sticky')
+            } else{
+                navbar.classList.remove('sticky')
+            }
+        };
+    </script>
+  </body>
 </html>
